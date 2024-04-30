@@ -1,0 +1,22 @@
+from random import*
+valorcompra=int(input("ingrese el añadido de la compra:"))
+balotas=choice(["verde","amarilla","rojo","blanco"])
+if balotas=="verde":
+    print(f"te toco el descuento del 100%")
+    valorpagar=0
+    print("el valor de la compra fue:{valorcompra}el color de la boleta fue:{balotas} el valor a pagar es: {valorpagar}")
+elif balotas=="amarilla":
+    print(f"te toco el descuento del 75%")
+    oferta=valorcompra*0.75
+    valorpagar=valorcompra-oferta
+    print(f"el valor de la compra fue:{valorcompra}el color de la balota fue: {balotas} el valor a pagar es: {valorpagar}")
+elif balotas=="rojo":
+    print(f"te toco el descuento del 50%")
+    oferta=valorcompra*0.5
+    valorpagar=valorcompra-oferta
+    print(f"el valor de la compra fue:{valorcompra} el color de la balota fue: {balotas} el valor a pagar es: {valorpagar}")
+elif balotas=="blanco":
+    print(f"no tiene oferta")
+    valorpagar=valorcompra
+    print(f"el valor de la compra fue: {valorcompra} el color de la boleta fue: {balotas} el valor a pagar")
+    

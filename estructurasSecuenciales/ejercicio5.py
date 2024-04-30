@@ -1,10 +1,12 @@
+
 costodelproducto=int(input("Digite el valor de la compra : "))
 rebaja=int(input("Digite la rebaja : "))
 
-descuentoCompra=descuento / 100 
+descuentoCompra=rebaja / 100 
 
 rebaja=rebaja * costodelproducto
 
-valorfinal=costodelproducto-rebaja
+valorFinal=costodelproducto-descuentoCompra
 
+#resultado
 print("La compra fue",costodelproducto,"rebaja",descuentoCompra ,"%","valor final es",valorFinal)
